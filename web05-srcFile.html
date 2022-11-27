@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>파일 삽입</title>
+    </head>
+    <body>
+        <h2>이미지 삽입</h2>
+        <img src="src/web05/kaltsit.png">
+        <h2>이미지 삽입(gif)</h2>
+        <img src="src/web05/kaltsit.gif">
+        <h2>이미지 조정</h2>
+        <img src="src/web05/kaltsit.png" width="300px">
+        <img src="src/web05/kaltsit.png" width="300px" height="500px">
+        <img src="src/web05/kaltsit.png" width="500px" height="300px">
+
+        <!-- embed로 온갖 파일을 삽입 가능하다. 
+            하지만 단순히 embed를 사용하면 기능이 제한적이다.
+            특정 파일은 특정 태그를 사용하는게 좋음.
+        -->
+        <h2>파일 삽입(embed+비디오)</h2>
+        <embed type="video/mp4" src="src/web05/kaltsit.mp4">
+
+        <!-- 오디오 삽입은 audio태그를 권장한다-->
+        <!-- 비디오 삽입은 video태그를 권장한다
+            비디오 옵션은 아래와 같다.
+            controls : 컨트롤바 생성(이게 없으면 컨트롤바가 안 나옴)
+            muted : 기본 음소거
+            autoplay : 자동재생
+            loop : 반복
+        -->
+        <h2>비디오 삽입(video)</h2>
+        <video controls muted autoplay loop>
+            <source type="video/mp4" src="src/web05/kaltsit.mp4">
+        </video>
+    </body>
+</html>

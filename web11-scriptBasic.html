@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>스크립트 기본</title>
+    </head>
+    <body>
+        <h1 id="heading">자바스크립트</h1>
+        <p>위 텍스트를 클릭해 보세요</p>
+        <!-- script 태그는 바디 마지막에 삽입한다. -->
+        <!-- html 스크립트 지정
+            두가지 방법으로 html의 스크립트를 정의할 수 있다.
+            1) 바디에 script 태그를 통해 지정한다. (이번 파트)
+            2) js파일을 만들어 거기서 지정한다.
+         -->
+        <!-- 스크립트는 순차 동작을 진행한다. -->
+        <script>
+            var heading = document.querySelector("#heading");
+            heading.onclick = function() {
+                heading.style.color = "red";
+            }
+        </script>
+    </body>
+</html>
