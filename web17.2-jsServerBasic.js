@@ -17,3 +17,8 @@ const server = http.createServer(async (req, res) => {
 server.on('listening', () => {console.log('8080포트 서버 연결 중...')});
 server.on('error', () => {console.error(error)});
 
+/*
+위의 코드의 경우 css가 구현되지 않는다. 왜?
+>>> 브라우저는 로컬이 아니라 서버에서 데이터를 전달 받는다.
+따라서 서버에서 css를 읽은 뒤, 이를 웹브라우저에 쏘아주어야 한다.
+*/
