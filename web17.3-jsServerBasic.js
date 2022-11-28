@@ -7,7 +7,7 @@ const express = require('express');
 const app = express();
 app.set('port', process.env.PORT || 8080);
 // web17.2에서 안되던 css 적용문제를 express에선 아래와 같이
-// 접근가능 폴더를 선언해주는걸로 해결가능하다.
+// 서버측의 접근가능 폴더를 선언해주는걸로 해결가능하다.
 app.use(express.static(__dirname + '/src'));
 
 // 동작 이벤트
